@@ -14,4 +14,6 @@ This website will host my professional works.
 
 [Resume](resume.html)
 
+[Plotly](plotly.html)
+
 
