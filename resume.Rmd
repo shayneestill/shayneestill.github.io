@@ -1,12 +1,66 @@
 ---
-title: "Shayne Estill"
+title: "Resume"
 output: 
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
-# This is Shayne's awesome website
+## Resume as of October 2024
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+Shayne Estill 50 Haven Ave, New York, NY | ske2118@cumc.columbia.edu | https://www.linkedin.com/in/shayne-estill/ | (925) 202-8700
+
+EDUCATION____________________________________________________________________________________________________ 
+Columbia University Mailman School of Public Health expected May 2025 Masters in Public Health, Epidemiology with a certificate in Applied Biostatistics and Public Health Data Science (4.0) 
+University of California, Berkeley May 2021 Bachelor of Arts in Molecular and Cell Biology, emphasis in Biochemistry (3.6)
+
+SKILLS_________________________________________________________________________________________________________ 
+● Proficient in SAS, Endnote, EPIC, Microsoft Office, Excel, PowerPoint, Geneious, Benchling. Beginner in STATA. 
+● Currently enrolled in Data Science I (using R), Relational Databases (using SQL), Spatial Epidemiology, Applied Regression, and Epidemiology III: Applied Epidemiological Analysis 
+● Molecular biology techniques: PCR, gel electrophoresis, plasmid miniprep, cell transformation, experimental set-up PUBLIC HEALTH
+
+EXPERIENCE__________________________________________________________________________________ 
+Centers for Disease Control and Prevention – Injury Center Summer Intern May 2024 – present 
+● Identified indicators that can be compared across 2009 and 2024 Tanzania Violence Against Children Surveys (VACS) 
+● Developed and adapted code in SAS for 20+ violence indicators to generate comparison tables 
+● Generated weighted percentages and 95% confidence intervals for all comparable indicators 
+● Cleaned ~ 4,000 datapoints in the 2024 VACS dataset using Excel 
+● Presented project to CDC Injury Center team in Atlanta, Georgia and participated in professional development opportunities on site
+
+Axis Community Health – Bridge Program Care Coordinator June 2021 - August 2023 
+● Served as primary lead for launch and workflow development of the Bridge mental health urgent care program 
+● Triage all incoming crisis calls, develop rapport, engage in risk assessment and crisis de-escalation and utilize motivational interviewing to assess their immediate and long term mental health and other needs 
+● Built relationships with, and are the primary contact for, local hospitals, organizations, schools, and other programs for referrals, advocacy and continuity of care 
+● Provided sleep coaching sessions developed by the UC Berkeley sleep team to patients 
+
+RESEARCH EXPERIENCE_______________________________________________________________________________________ 
+
+Mauro Lab, Columbia University Mailman School of Public Health – Research Assistant September 2024 – present
+● Conducted literature review in Endnote relating to substance use treatment and incarceration
+● Synthesized information from Add Health surveys into written word and Excel summary tables in preparation for grant application
+Keasling Lab, Joint Bioenergy Institute – Research Assistant September 2019 – May 2021 
+● Conducted literature search to identify enzymes to be used in metabolic engineering of kavalactone pathway into Pseudomonas putida 
+● Constructed sixteen plasmids containing enzymes of interest and transformed nine into P. putida KT 2440 Δech 
+● Awarded certificate of achievement for excellent verbal presentation out of cohort of ~20 students in Fall 2019 
+Blackman Lab, UC Berkeley – Research Assistant January 2018 – May 2019 
+● Grew up plants collected from different elevations and drought conditions in controlled conditions and recorded measurements for a variety of traits to understand phenotypic differences in Mimulus guttatus 
+● Performed PCRs to genotype genetic differences between populations of Mimulus guttatus 
+● Collaborated with two postdocs to develop a Citizen Science app to make phenological observations in our research sites. Traveled on a four-day backpacking field study in Yosemite to test the functionality of our app, make necessary corrections, and also promote our project amongst hikers and nature enthusiasts in the area - work featured in UC Berkeley Breakthroughs Spring 2019 edition
+
+LEADERSHIP AND PUBLIC SERVICE_____________________________________________________________________________ 
+Columbia University Mailman School of Public Health - Quantitative Foundations Teaching Assistant September 2024 – present 
+● Lead weekly discussion section with ~20 students to teach foundational epidemiology and quantitative research methods 
+● Grade weekly homework and provide feedback to instructors regarding student performance and class assignments 
+● Assist students in weekly office hours
+
+Suitcase Clinic – Continuity of Care Advocate Officer February 2018 – May 2021 
+● Assisted underserved individuals in Berkeley in navigating medical, dental, and mental health services 
+● Delegated tasks, facilitated meetings, and handled communication with other advocates and external partner organizations to ensure a warm hand off between our clients and other organizations 
+● Designed and disseminated pamphlets to provide resources to the unhoused community during the pandemic 
+● Facilitated discussions with new Suitcase Clinic students regarding a variety of topics related to homelessness as an Undergraduate Student Instructor from May 2020 to May 2021 Golden Bear Orientation – Orientation Leader April 2020 - August 2020 
+● Facilitated activities and conversations related to diversity, inclusion, sexual violence, mental health 
+● Worked collaboratively with co-leader to create an engaging and community building virtual environment Connect-in-Place Online Summer Education Program – Science Instructor June 2020 – August 2020 
+● Taught chemistry and biotechnology to high school students via Zoom 
+● Developed lesson plans including lecture, group based discussions, practice problems, and homework
+
+

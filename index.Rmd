@@ -6,7 +6,9 @@ output:
     toc_float: true
 ---
 
-# This is Shayne's awesome website
+# This is Shayne's website
+
+This website will host my professional works. 
 
 [About me](about.html)
 

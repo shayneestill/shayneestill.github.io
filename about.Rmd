@@ -1,12 +1,11 @@
 ---
-title: "Shayne Estill"
+title: "About Me"
 output: 
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
-# This is Shayne's awesome website
+I am a second year MPH student at the Columbia Mailman School of Public Health studying Epidemiology with a certificate in Applied Biostatistics and Public Health Data Science. 
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+In my free time I enjoy running, hiking, and journaling. 
