@@ -7,15 +7,15 @@ output:
     source: embed
 ---
 
-```{r setup, include=FALSE}
+```{r setup, echo = FALSE}
 library(flexdashboard)
 
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
-```
+library(dplyr)
+library(rnoaa)
 
-```{r}
 knitr::opts_chunk$set(
 	echo = TRUE,
 	warning = FALSE,
@@ -35,12 +35,7 @@ scale_colour_discrete = scale_colour_viridis_d
 scale_fill_discrete = scale_fill_viridis_d
 ```
 
-```{r}
-library(dplyr)
-library(rnoaa)
-```
-
-```{r}
+```{r echo = FALSE}
 weather_df = 
   rnoaa::meteo_pull_monitors(
     c("USW00094728", "USW00022534", "USS0023B17S"),
@@ -64,38 +59,29 @@ weather_df =
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Scatter plot of Minimum temperature vs Maximum temperature across three US cities
 
-```{r}
-weather_df_scatter <-
-  weather_df |>
+```{r echo = FALSE}
+weather_df |>
   plot_ly(
     x = ~tmin, y = ~tmax, type = "scatter", mode = "markers",
     color = ~name, alpha = 0.5)
-
-weather_df_scatter
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Boxplot of minimum temperatures across three US cities
 
-```{r}
-weather_df_box <-
+```{r echo = FALSE}
   weather_df |>
   plot_ly(y = ~tmin, color = ~name, type = "box", colors = "viridis") 
-
-weather_df_box
 ```
 
-### Chart C
+### Barplot of total precipitation across three US cities 
 
-```{r}
-weather_df_bar <-
+```{r echo = FALSE}
   weather_df |>
   plot_ly(x = ~name, y = ~prcp, color = ~name, type = "bar", colors = "viridis")
-
-weather_df_bar
 ```
 
