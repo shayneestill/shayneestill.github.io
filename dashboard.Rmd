@@ -35,6 +35,29 @@ scale_colour_discrete = scale_colour_viridis_d
 scale_fill_discrete = scale_fill_viridis_d
 ```
 
+```{r}
+library(dplyr)
+library(rnoaa)
+```
+
+```{r}
+weather_df = 
+  rnoaa::meteo_pull_monitors(
+    c("USW00094728", "USW00022534", "USS0023B17S"),
+    var = c("PRCP", "TMIN", "TMAX"), 
+    date_min = "2021-01-01",
+    date_max = "2022-12-31") |>
+  mutate(
+    name = case_match(
+      id, 
+      "USW00094728" ~ "CentralPark_NY", 
+      "USW00022534" ~ "Molokai_HI",
+      "USS0023B17S" ~ "Waterhole_WA"),
+    tmin = tmin / 10,
+    tmax = tmax / 10) |>
+  select(name, id, everything())
+```
+
 
 
 
@@ -44,7 +67,13 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
+weather_df_scatter <-
+  weather_df |>
+  plot_ly(
+    x = ~tmin, y = ~tmax, type = "scatter", mode = "markers",
+    color = ~name, alpha = 0.5)
 
+weather_df_scatter
 ```
 
 Column {data-width=350}
@@ -53,12 +82,20 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
+weather_df_box <-
+  weather_df |>
+  plot_ly(y = ~tmin, color = ~name, type = "box", colors = "viridis") 
 
+weather_df_box
 ```
 
 ### Chart C
 
 ```{r}
+weather_df_bar <-
+  weather_df |>
+  plot_ly(x = ~name, y = ~prcp, color = ~name, type = "bar", colors = "viridis")
 
+weather_df_bar
 ```
 
