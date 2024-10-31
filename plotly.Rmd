@@ -1,9 +1,9 @@
 ---
 title: "Plotly"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
+  flexdashboard:flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
 ## Plotly graphs 
@@ -11,7 +11,76 @@ output:
 ```{r, echo = FALSE}
 library(tidyverse)
 library(p8105.datasets)
-
 library(plotly)
+
+knitr::opts_chunk$set(
+	echo = TRUE,
+	warning = FALSE,
+	fig.width = 8, 
+  fig.height = 6,
+  out.width = "90%"
+)
+
+theme_set(theme_minimal() + theme(legend.position = "bottom"))
+
+options(
+  ggplot2.continuous.colour = "viridis",
+  ggplot2.continuous.fill = "viridis"
+)
+
+scale_colour_discrete = scale_colour_viridis_d
+scale_fill_discrete = scale_fill_viridis_d
+```
+
+
+Create a flexdashboard using plotly for that includes at least three distinct plot types (e.g. scatterplots, line plots, bar plots, box plots, etc.). Use one of the following datasets, and load from the p8105.datasets package:
+```{r}
+library(dplyr)
+library(rnoaa)
+```
+
+```{r}
+weather_df = 
+  rnoaa::meteo_pull_monitors(
+    c("USW00094728", "USW00022534", "USS0023B17S"),
+    var = c("PRCP", "TMIN", "TMAX"), 
+    date_min = "2021-01-01",
+    date_max = "2022-12-31") |>
+  mutate(
+    name = case_match(
+      id, 
+      "USW00094728" ~ "CentralPark_NY", 
+      "USW00022534" ~ "Molokai_HI",
+      "USS0023B17S" ~ "Waterhole_WA"),
+    tmin = tmin / 10,
+    tmax = tmax / 10) |>
+  select(name, id, everything())
+```
+
+
+```{r}
+weather_df_scatter <-
+  weather_df |>
+  plot_ly(
+    x = ~tmin, y = ~tmax, type = "scatter", mode = "markers",
+    color = ~name, alpha = 0.5)
+```
+
+```{r}
+weather_df_box <-
+  weather_df |>
+  plot_ly(y = ~tmin, color = ~name, type = "box", colors = "viridis") 
+```
+
+
+```{r}
+weather_df_bar <-
+  weather_df |>
+  plot_ly(x = ~name, y = ~prcp, color = ~name, type = "bar", colors = "viridis")
+```
+
+
+```{r}
+rmarkdown::render("plotly.Rmd", output_format = "flexdashboard::flex_dashboard")
 ```
 
