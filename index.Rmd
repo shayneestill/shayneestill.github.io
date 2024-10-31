@@ -14,5 +14,6 @@ This website will host my professional works.
 
 [Resume](resume.html)
 
+[Dashboard](dashboard.html)
 
 
