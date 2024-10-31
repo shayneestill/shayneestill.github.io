@@ -8,11 +8,14 @@ output:
 
 ## Plotly graphs 
 
-```{r, echo = FALSE}
+```{r}
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
+```
 
+
+```{r}
 knitr::opts_chunk$set(
 	echo = TRUE,
 	warning = FALSE,
